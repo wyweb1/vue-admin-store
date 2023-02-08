@@ -4,7 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Gantitem from '@/view/gantt/index'
 import Login from '@/view/login/index'
 
-// import Login from '../view/login/index.vue'
+import Layout from '@/layout'
 
 
 Vue.use(Router)
@@ -16,23 +16,33 @@ Vue.use(Router)
 // }
 
 export const constantRoutes= [
- 
+    {
+      path:'/layout',
+      component:Layout,
+      // redirect:'',
+      children:[{
+        path:'',
+        name:'',
+
+      }]
+    },
     {
       // path:'/',
       path:'/gantitem',
-      name:'Gantitem',
+      // name:'Gantitem',
       component:Gantitem,
       // redirect:'/gantitem'
    
     },
     {
       path: '/login',
-      name: 'Login',
+      // name: 'Login',
       // component: ()=> import('@/view/login/index'),
       component:Login,
       
       hidden:true,//该路由字段在侧边栏隐藏
-    }
+    },
+   
   
 ];
 
