@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- 最顶层的组件出口，渲染最高级路由匹配到的组件 -->
     <router-view/>
   </div>
 </template>
@@ -18,6 +18,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  
 }
 </style>

@@ -1,0 +1,28 @@
+/* common */
+* {box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box;
+     -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: "Source Han Sans" ;
+    // font-size: 0;
+    }
+input,textarea{outline: none;}
+a{text-decoration: none;}
+
+#app {
+    height: 100%;
+   
+}
+.clearfix {
+    &:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+    }
+  }
